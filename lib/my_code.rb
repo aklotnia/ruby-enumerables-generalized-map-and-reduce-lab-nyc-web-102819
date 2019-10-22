@@ -9,8 +9,9 @@ def map(array)
 end
 
 def reduce(array, starting_point = nil)
-  if array.find {|item| item.is_a? String} 
-    return array.map{|e| !!e}
+  if sv 
+    num1 = sv
+    i = 0
   else
     if starting_point
       new_array = array.reduce(starting_point) {|sum, num| sum + num}
