@@ -13,12 +13,11 @@ def reduce(array, starting_point = nil)
     num1 = sv
     i = 0
   else
-    if starting_point
-      new_array = array.reduce(starting_point) {|sum, num| sum + num}
-    else
-      new_array = array.reduce(0) {|sum, num| sum + num}
-    end
+    num1 = array[0]
+    i = 1
   end
+  
+  
   new_array
 end
 
